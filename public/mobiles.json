@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "mobile_name": "iPhone X",
+        "mobile_img": "iphone_x.jpg",
+        "companyName": "Apple",
+        "Price": "100000"
+    },
+    {
+        "id": 2,
+        "mobile_name": "Samsung Galaxy S9",
+        "mobile_img": "samsung_galaxy_s9.jpg",
+        "companyName": "Samsung",
+        "Price": "80000"
+    },
+    {
+        "id": 3,
+        "mobile_name": "Google Pixel 3",
+        "mobile_img": "google_pixel_3.jpg",
+        "companyName": "Google",
+        "Price": "70000"
+    },
+    {
+        "id": 4,
+        "mobile_name": "Huawei P30",
+        "mobile_img": "huawei_p30.jpg",
+        "companyName": "Huawei",
+        "Price": "60000"
+    },
+    {
+        "id": 5,
+        "mobile_name": "OnePlus 6T",
+        "mobile_img": "oneplus_6t.jpg",
+        "companyName": "OnePlus",
+        "Price": "55000"
+    },
+    {
+        "id": 6,
+        "mobile_name": "Xiaomi Mi 9",
+        "mobile_img": "xiaomi_mi_9.jpg",
+        "companyName": "Xiaomi",
+        "Price": "45000"
+    },
+    {
+        "id": 7,
+        "mobile_name": "Sony Xperia XZ3",
+        "mobile_img": "sony_xperia_xz3.jpg",
+        "companyName": "Sony",
+        "Price": "70000"
+    },
+    {
+        "id": 8,
+        "mobile_name": "LG G8 ThinQ",
+        "mobile_img": "lg_g8_thinq.jpg",
+        "companyName": "LG",
+        "Price": "60000"
+    },
+    {
+        "id": 9,
+        "mobile_name": "Nokia 9 PureView",
+        "mobile_img": "nokia_9_pureview.jpg",
+        "companyName": "Nokia",
+        "Price": "55000"
+    },
+    {
+        "id": 10,
+        "mobile_name": "Motorola Moto G7 Plus",
+        "mobile_img": "motorola_moto_g7_plus.jpg",
+        "companyName": "Motorola",
+        "Price": "30000"
+    }
+]
