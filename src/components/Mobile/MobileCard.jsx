@@ -12,8 +12,8 @@ const MobileCard = ({mobile}) => {
     <h5 className="card-title">{mobile_name}</h5>
     <p className="card-text"><i class="fa-solid fa-bangladeshi-taka-sign"></i> {price}</p>
    <div className='d-flex justify-content-center align-items-center gap-4'>
-   <Link to={`/details/${id}`} className="btn bg-primary-subtle">View Details</Link>
-   <Link href="#" className="btn btn-outline-info"><i className="fa-solid fa-cart-shopping"></i></Link>
+   <Link to={`/details/${id}`} className="btn bg-primary-subtle w-100">View Details</Link>
+   
    </div>
   </div>
 </div>

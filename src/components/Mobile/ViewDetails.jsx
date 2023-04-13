@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import './ViewDetails.css'
+import { addToDb } from "../../utilities/fakeDB";
 const ViewDetails = () => {
   const { id } = useParams();
   // console.log(id);
   const details = useLoaderData();
   const [mobileDetails, setMobileDetails] = useState({});
+
+  const handleAddCart=(id)=>{
+    // console.log(id);
+    addToDb(id)
+    
+  }
+ 
   useEffect(() => {
     const data = details.find((detail) => detail.id === parseInt(id));
     setMobileDetails(data);
@@ -35,12 +43,15 @@ const ViewDetails = () => {
                 <span className="fw-bold">Country : </span>Made in {mobileDetails.country}
               </p>
               <div className="d-flex justify-content-center align-items-center gap-4">
-                <Link href="#" className="btn btn-outline-info fw-bold">
-                  Add To Cart
+                <Link>
+                  <button onClick={()=>handleAddCart(id)}  className="btn btn-outline-info fw-bold">Add To Cart</button>
                 </Link>
               </div>
             </div>
           </div>
+          <div>
+      <Link to={'/mobile'} ><button className="btn">Back to shop</button></Link>
+      </div>
         </div>
       </div>
     </div>

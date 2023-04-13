@@ -26,7 +26,7 @@ const Header = () => {
           <Link to={'contact'} className="nav-link">Contact</Link>
         </li>
         <li className='nav-item'>
-            <Link className='nav-link'><i className="fa-solid fa-cart-shopping"></i></Link>
+            <Link to={'cart'} className='nav-link'><i className="fa-solid fa-cart-shopping"></i></Link>
         </li>
       </ul>
       <div className="d-flex justify-content-center gap-3" role="search">

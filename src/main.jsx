@@ -9,6 +9,8 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Mobiles from './components/Mobile/Mobiles'
 import ViewDetails from './components/Mobile/ViewDetails'
+import CartPage from './components/CartPage'
+import { cartData } from './components/loaders/getMobileCart'
 
 const router=createBrowserRouter([
   {
@@ -35,6 +37,11 @@ const router=createBrowserRouter([
         path:'details/:id',
         element:<ViewDetails/>,
         loader:()=>fetch('/Mobiles.json')
+      },
+      {
+        path:'cart',
+        element:<CartPage/>,
+        loader:cartData
       }
     ]
   }

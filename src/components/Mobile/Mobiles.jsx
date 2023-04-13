@@ -11,7 +11,7 @@ const Mobiles = () => {
         .then(data=>setMobileData(data))
     },[])
     return (
-        <div className='row gy-5 my-5'>
+        <div className='row gy-5 mt-5'>
             {
                 mobileData.map(mobile=><MobileCard mobile={mobile} key={mobile.id}/>)
             }
