@@ -11,24 +11,24 @@ const Header = () => {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <Link className="nav-link" href="#">Home</Link>
+      <ul className="navbar-nav  m-auto mb-2 mb-lg-0">
+        <li className="nav-item px-3">
+          <Link to={'/'} className="nav-link" href="#"><i className="fa-solid fa-house"></i></Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="#">Link</Link>
+        <li className="nav-item px-3">
+          <Link to={'about'} className="nav-link">About</Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item px-3">
           
         </li>
         <li className="nav-item">
-          <Link className="nav-link disabled">Disabled</Link>
+          <Link to={'contact'} className="nav-link">Contact</Link>
         </li>
       </ul>
-      <form className="d-flex" role="search">
-        <button  className="btn btn-outline-warning">Sign up</button>
-        <button className="btn btn-outline-success">Log in</button>
-      </form>
+      <div className="d-flex justify-content-center gap-3" role="search">
+        <button  className="btn text-warning"><i className="fa-solid fa-right-to-bracket"></i></button>
+        <button className="btn"><i className="fa-solid fa-sun"></i></button>
+      </div>
     </div>
   </div>
 </nav>
