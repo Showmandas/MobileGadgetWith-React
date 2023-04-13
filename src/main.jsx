@@ -7,6 +7,8 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
+import Mobiles from './components/Mobile/Mobiles'
+import ViewDetails from './components/Mobile/ViewDetails'
 
 const router=createBrowserRouter([
   {
@@ -25,6 +27,15 @@ const router=createBrowserRouter([
         path:'contact',
         element:<Contact/>
       },
+      {
+        path:'mobile',
+        element:<Mobiles/>
+      },
+      {
+        path:'details/:id',
+        element:<ViewDetails/>,
+        loader:()=>fetch('/Mobiles.json')
+      }
     ]
   }
 ])
