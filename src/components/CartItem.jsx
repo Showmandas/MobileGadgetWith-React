@@ -11,13 +11,13 @@ const CartItem = ({ product }) => {
             <img
               src={mobile_img}
               className="img-fluid rounded-start"
-              alt="..."
+              alt="mobile image"
             />
           </div>
           <div className="col-md-8">
-            <div className="card-body">
+            <div className="card-body d-flex justify-content-between align-items-center">
+              <div>
               <h5 className="card-title">
-                {" "}
                 <i class="fa-solid fa-bangladeshi-taka-sign"></i> {price}
               </h5>
               <p className="card-text">
@@ -28,13 +28,18 @@ const CartItem = ({ product }) => {
                   Quantity: {quantity}
                 </small>
               </p>
+              <p>
+                <button className="btn ">Remove</button>
+              </p>
+              </div>
+              <div>
+                <h5>${price * quantity}</h5>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div>
-      <Link to={'/mobile'} ><button className="btn">Back to shop</button></Link>
-      </div>
+      
     </div>
   );
 };
